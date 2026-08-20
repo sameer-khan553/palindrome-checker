@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Palindrome Checker</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Palindrome Checker</h1>
+
+        <p class="subtitle">
+            Enter a name and check whether it reads the same backward.
+        </p>
+
+        <div class="input-section">
+
+            <input
+                    type="text"
+                    id="nameInput"
+                    placeholder="Enter a name..."
+                    autocomplete="off"
+            >
+
+            <button onclick="checkPalindrome()">
+                Check
+            </button>
+
+        </div>
+
+        <div id="result" class="result">
+
+            <div class="result-row">
+                <span>Input</span>
+                <strong id="original"></strong>
+            </div>
+
+            <div class="result-row">
+                <span>Reverse</span>
+                <strong id="reversed"></strong>
+            </div>
+
+            <div class="result-row">
+                <span>Characters</span>
+                <strong id="characterCount"></strong>
+            </div>
+
+            <div id="status"></div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
