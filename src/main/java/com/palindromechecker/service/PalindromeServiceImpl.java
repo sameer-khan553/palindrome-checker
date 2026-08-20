@@ -18,18 +18,6 @@ public class PalindromeServiceImpl implements PalindromeService {
 
             String original = input.trim();
 
-            /*
-             * Remove spaces and special characters
-             * and convert everything to lowercase.
-             *
-             * Example:
-             *
-             * "A man, a plan, a canal: Panama"
-             *
-             * becomes:
-             *
-             * "amanaplanacanalpanama"
-             */
             String cleanedInput = original
                     .replaceAll("[^a-zA-Z0-9]", "")
                     .toLowerCase();
